@@ -1,0 +1,186 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #1b1f3b, #0a0c1b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1200px;
+  color: #e5e7eb;
+}
+
+
+.container {
+  width: 420px;
+  padding: 30px 28px;
+  border-radius: 16px;
+  background: linear-gradient(
+    145deg,
+    rgba(255,255,255,0.12),
+    rgba(255,255,255,0.03)
+  );
+  backdrop-filter: blur(18px);
+  transform-style: preserve-3d;
+  animation: floatCard 6s ease-in-out infinite;
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.55),
+    inset 0 1px 1px rgba(255,255,255,0.25);
+}
+
+
+@keyframes floatCard {
+  0%   { transform: translateY(0) rotateX(0deg) rotateY(0deg); }
+  50%  { transform: translateY(-12px) rotateX(4deg) rotateY(-3deg); }
+  100% { transform: translateY(0) rotateX(0deg) rotateY(0deg); }
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 22px;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+
+  text-shadow:
+    0 2px 6px rgba(0,0,0,0.6),
+    0 0 18px rgba(99,102,241,0.45);
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+
+label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #c7d2fe;
+}
+
+
+input {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #f9fafb;
+
+  background: rgba(15, 23, 42, 0.9);
+
+  box-shadow:
+    inset 0 3px 6px rgba(0,0,0,0.7),
+    inset 0 -1px 1px rgba(255,255,255,0.08);
+
+  transition: all 0.3s ease;
+}
+
+input::placeholder {
+  color: #94a3b8;
+}
+
+input:focus {
+  transform: translateZ(10px);
+  box-shadow:
+    0 0 0 1px rgba(99,102,241,0.6),
+    0 10px 30px rgba(99,102,241,0.35);
+}
+
+
+button {
+  margin-top: 8px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+
+  background: linear-gradient(145deg, #6366f1, #4338ca);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+
+  transform-style: preserve-3d;
+
+  box-shadow:
+    0 12px 25px rgba(67, 56, 202, 0.6),
+    inset 0 1px 1px rgba(255,255,255,0.35);
+
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  transform: translateY(-2px) translateZ(12px);
+  box-shadow:
+    0 18px 40px rgba(67, 56, 202, 0.75);
+}
+
+button:active {
+  transform: translateY(2px) translateZ(0);
+  box-shadow:
+    inset 0 6px 10px rgba(0,0,0,0.5);
+}
+
+
+.url-box {
+  margin-bottom: 18px;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+
+  background: rgba(15, 23, 42, 0.8);
+
+  box-shadow:
+    inset 0 2px 4px rgba(0,0,0,0.6),
+    0 8px 25px rgba(0,0,0,0.45);
+}
+
+.url-box a {
+  color: #a5b4fc;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.url-box a:hover {
+  text-decoration: underline;
+}
+
+
+table {
+  width: 100%;
+  margin-top: 18px;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  color: #c7d2fe;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+td {
+  color: #e5e7eb;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
