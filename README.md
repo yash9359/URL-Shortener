@@ -63,6 +63,9 @@ The project includes **JWT-based authentication**, **role-based authorization**,
   - Access admin-only routes
 
 ---
+## Screen Shot
+
+<img width="1919" height="931" alt="image" src="https://github.com/user-attachments/assets/cfdea09f-f09a-42fd-a33b-e5f26de398c0" />
 
 ## 🔗 URL Shortening Flow
 
